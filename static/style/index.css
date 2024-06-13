@@ -1,0 +1,17 @@
+.content {
+    padding: 50px 20px !important;
+    display: grid;
+    gap: 1em;
+}
+
+.api_div {
+    display: grid;
+    gap: 10px;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+    display: grid;
+    gap: 5px;
+}

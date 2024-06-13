@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkStash</title>
+    <link rel="stylesheet" href="{% static 'style/index.css' %}">
+    <link rel="stylesheet" href="{% static 'style/global.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <h1 class="heading">Link Stash</h1>
+        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil animi perferendis laborum suscipit pariatur provident.</p>
+        <ul>
+            <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+            <li><a href="{% url 'account' %}">Account</a></li>
+        </ul>
+        <div class="api_div">
+            <p>API Endpoint (CRUD Functionality)</p>
+            <ul>
+                <li><a href="{% url 'link_create' %}">Create Endpoint</a></li>
+                <li><a href="{% url 'link_retrieve' %}">Retrieve Endpoint</a></li>
+                <li><a href="">Update Endpoint (/api/update/{str:pk})</a></li>
+                <li><a href="">Delete Endpoint (/api/delete/{str:pk})</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

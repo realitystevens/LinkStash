@@ -1,0 +1,24 @@
+.content {
+    padding: 50px 20px !important;
+    display: grid;
+    gap: 2em;
+}
+
+.form {
+    text-align: left;
+    display: grid;
+    gap: 20px;
+}
+
+.dashboard_ul {
+    text-align: left;
+}
+
+.dashboard_ul li {
+    display: grid;
+    padding: 10px 0px;
+}
+
+.index_url {
+    text-align: left;
+}

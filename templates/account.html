@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | Link Stash</title>
+    <link rel="stylesheet" href="{% static 'style/account.css' %}">
+    <link rel="stylesheet" href="{% static 'style/global.css' %}">
+</head>
+<body>
+    <div class="content">
+        <form method="POST">
+            {% csrf_token %}
+            <select name="timezone">
+                {% for timezone in timezones %}
+                <option value="{{ timezone }}">{{ timezone }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Set Timezone</button>
+        </form>
+    </div>
+    
+</body>
+</html>
